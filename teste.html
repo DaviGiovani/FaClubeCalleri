@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8"> 
+    <link rel="icon" href="callerii.webp">
+    <link rel="stylesheet" href="style.css">
+
+<title>Fan Club Calleri 📣 </title>
+</head> 
+<body>
+    <div id="like-container">
+        <button id="like-button">CURTA AQUI PARA AMAR O CALLERI</button>
+        <span id="like-count">0</span>
+        c
+      </div>
+      
+<h1>Calleri (Fã clube)❤️</h1>
+<h2>UMA MÁQUINA</h2>
+<h3>UMA BESTA ENJAULADA</h3>
+<div class="p6">
+<p>O homem mais bonito do mundo❤️
+Homem de muita garra e persuasão
+</p>
+</div>
+
+<div class="p1">
+<p>Títulos: </p>
+</div>
+<div class="p2">
+<p>Champions League - 2007, 2008, 2010, 2015 </p>
+<p>Libertadores - 2016, 2018, 2019</p>
+<p>Paulistão - 2016, 2017, 2019 </p>
+<p>Mundiais - 2007, 2008, 2015, 2016, 2019 </p>
+<p>Premier League - 2020 </p>
+<p>Ligue 1 - 2021 </p>
+</div>
+<div class="p3">
+<p>Gols na carreira: 1249</p>
+</div>
+<div class="p5">
+<p>GALERIA DE FOTOS DO MEU AMOR:</p>
+</div>
+<div class="p6">
+
+
+
+
+
+
+<img src="calleri 1.jfif" alt="Minha Imagem">
+<img src="calleri 2.jfif" alt="Minha Imagem">
+<img src="calleri 3.jfif" alt="Minha Imagem">
+<img src="calleri 4.jfif" alt="Minha Imagem">
+<img src="calleri 5.jfif" alt="Minha Imagem">
+<img src="calleri 6.jfif" alt="Minha Imagem">
+<img src="calleri 7.jfif" alt="Minha Imagem">
+<img src="calleri 8.jfif" alt="Minha Imagem">
+<img src="calleri 9.jfif" alt="Minha Imagem">
+<img src="calleri 10.jfif" alt="Minha Imagem">
+
+
+
+
+
+<script>
+const likeButton = document.querySelector("#like-button");
+const likeCount = document.querySelector("#like-count");
+
+likeButton.addEventListener("click", function() {
+  likeCount.textContent = parseInt(likeCount.textContent) + 1;
+});
+const firebaseConfig = {
+  apiKey: "your-api-key",
+  authDomain: "your-auth-domain",
+  databaseURL: "your-database-url",
+  projectId: "your-project-id",
+  storageBucket: "your-storage-bucket",
+  messagingSenderId: "your-sender-id",
+  appId: "your-app-id"
+};
+
+firebase.initializeApp(firebaseConfig);
+const database = firebase.database();
+
+likeButton.addEventListener("click", function() {
+  likeCount.textContent = parseInt(likeCount.textContent) + 1;
+  database.ref("like-count").set(likeCount.textContent);
+});
+
+database.ref("like-count").on("value", function(snapshot) {
+  likeCount.textContent = snapshot.val();
+});
+
+</script>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+
+ body {
+    background-image: url("spfc2.jpg");
+
+  }
+
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium';
+    color: rgb(255, 255, 255);
+    
+}
+h2 {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'arial';
+    color: rgb(214, 20, 20);
+    
+}
+h3 {
+    text-align: center;
+    font-size: 15px;
+    font-family: 'arial';
+    color: rgb(240, 9, 9);
+    
+}
+
+.p1{
+    color: aliceblue;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium';
+    background-color: rgb(110, 35, 35) ;
+}
+.p2{
+    font-size: 20px;
+    font-family: Tahoma ;
+    background-color: rgb(199, 199, 199) ;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    left: 0;
+}
+.p3{
+    font-size: 30px;
+    font-family: Impact;
+    color: rgb(138, 23, 23) ;
+}
+
+
+.p5{
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium';
+    color: aliceblue;
+}
+
+.p6{
+    font-size: ;
+    font-family: ;
+    color: white;
+
+
+
+
+}
+img {
+width: 200px;
+
+}
